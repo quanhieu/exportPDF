@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            font-weight: 200;
+        }
+        table {
+            width: 100%;
+        }
+        table tr td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Vaccine History</h1>
+        <p>{{ id.name.first }} {{ id.name.last }}</p>
+        <p>{{ id.animal }}, {{ id.color }}, {{ id.breed }}</p>
+
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+            {{#each shots as |shot|}}
+                <tr>
+                    <td>{{ shot.type }}</td>
+                    <td>{{ dateFormat shot.date 'MMM Do' }}</td>
+                </tr>
+            {{/each}}
+        </table>
+    </body>
+</html>

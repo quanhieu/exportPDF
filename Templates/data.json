@@ -1,0 +1,29 @@
+{
+  "id": {
+    "name": {
+      "first": "Layla",
+      "last": "Clark"
+    },
+    "animal": "Dog",
+    "color": "Yellow",
+    "breed": "Carolina Dog"
+  },
+  "shots": [
+    {
+      "type": "Heartworm",
+      "date": "2017-07-27"
+    },
+    {
+      "type": "Intestinal Parasite",
+      "date": "2017-02-11"
+    },
+    {
+      "type": "Kennel Cough",
+      "date": "2018-01-05"
+    },
+    {
+      "type": "Rabies",
+      "date": "2018-02-05"
+    }
+  ]
+}
